@@ -1,0 +1,64 @@
+div {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 300px;
+  height: 100px;
+  position: relative;
+}
+
+button {
+  height: 75px;
+  width: 75px;
+  border: none;
+  border-radius: 50%;
+
+  margin: 0 10px;
+
+  position: absolute;
+  left: 0;
+
+  background-color: var(--color-bt);
+
+  transition: background-color .5s;
+
+  animation: out 1s;
+}
+
+span {
+  width: 300px;
+  height: 100px;
+  background: var(--color-span);
+  display: block;
+  border-radius: 9999px;
+  transition: .5s;
+}
+
+.light button {
+  animation: in 1s forwards;
+}
+
+@keyframes in {
+  from {
+    left: 0;
+  }
+
+  to {
+    left: 69%;
+  }
+}
+
+@keyframes out {
+  from {
+    left: 69%;
+  }
+
+  to {
+    left: 0;
+  }
+}

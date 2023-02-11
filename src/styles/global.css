@@ -1,0 +1,23 @@
+:root {
+  --bg: #e6e6e6;
+  --color-span: #000;
+  --color-bt: #e6e6e6;
+}
+
+.light {
+  --bg: #000000;
+  --color-span: #e6e6e6;
+  --color-bt: #000;
+  }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  transition: .5s;
+
+  background-color: var(--bg);
+}
